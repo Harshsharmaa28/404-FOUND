@@ -4,7 +4,7 @@ import { featureLeftImg, featureRightImg } from "../../utils/Constant";
 const Feature = () => {
   return (
     <div className="  pt-5 ">
-      <div className=" mx-auto text-center text-4xl bg-black text-white p-2 w-fit rounded-2xl flex  gap-10 my-5 px-   ">
+      <div className=" mx-auto text-center text-4xl bg-black text-white p-2 w-fit rounded-3xl flex  gap-10 my-5 px-20   ">
         <div>
           {" "}
           First{" "}

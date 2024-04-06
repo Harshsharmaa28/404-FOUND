@@ -39,9 +39,6 @@ function App() {
       path: "/faqs",
       element: <Faqs />,
       id: 5,
-      path: "/academics",
-      element: <Academics/>,
-      id: 5,
     },
     {
       path: "/Mentors",
@@ -72,6 +69,11 @@ function App() {
       path: "/features",
       element: <Feature />,
       id: 11,
+    },
+    {
+      path: "/academics",
+      element: <Academics />,
+      id: 12,
     },
   ];
   return (
