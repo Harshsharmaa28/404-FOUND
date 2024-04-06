@@ -10,6 +10,7 @@ import Signup1 from "./pages/Auth/Signup1";
 import Signup2 from "./pages/Auth/Signup2";
 import Faqs from "./pages/faqs/Faqs";
 import Contact from "./pages/ContactUs/Contact";
+import Academics from "./pages/Academics/Academics";
 import Feature from "./pages/Features/Feature";
 
 function App() {
@@ -37,6 +38,9 @@ function App() {
     {
       path: "/faqs",
       element: <Faqs />,
+      id: 5,
+      path: "/academics",
+      element: <Academics/>,
       id: 5,
     },
     {
