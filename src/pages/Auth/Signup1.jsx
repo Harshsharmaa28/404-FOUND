@@ -1,13 +1,40 @@
 import React, { useState } from "react";
 import { loginImage, logoImage } from "../../utils/Constant";
-
+import { createUserWithEmailAndPassword } from "firebase/auth";
+import { auth, fireDB } from "./Firebase-config";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { Timestamp, addDoc, collection } from "firebase/firestore";
 
 const Signup1 = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleSubmit = async (e) => {};
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (name === "" || email === "" || password === "") {
+      return toast.error("All fields are required");
+    }
+    try {
+      const users = await createUserWithEmailAndPassword(auth, email, password);
+
+      const user = {
+        name: name,
+        uid: users.user.uid,
+        email: users.user.email,
+        time: Timestamp.now(),
+      };
+      const userRef = collection(fireDB, "users");
+      await addDoc(userRef, user);
+      toast.success("Sign up SucessFully");
+      setName("");
+      setEmail("");
+      setPassword("");
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   return (
     <div className="flex flex-col lg:flex-row h-screen">
@@ -102,6 +129,7 @@ const Signup1 = () => {
           </div>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };
