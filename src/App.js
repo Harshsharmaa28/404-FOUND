@@ -6,6 +6,8 @@ import Homepage from "./components/Homepage/Homepage";
 import Scholarship from "./pages/Scholarship/Scholarship";
 import Mentors from "./pages/Mentors/Mentors";
 import SignIn from "./pages/Auth/SignIn";
+import Signup1 from "./pages/Auth/Signup1";
+import Signup2 from "./pages/Auth/Signup2";
 
 function App() {
   const links = [
@@ -43,6 +45,16 @@ function App() {
       path: "/login",
       element: <SignIn />,
       id: 8,
+    },
+    {
+      path: "/signup1",
+      element: <Signup1 />,
+      id: 9,
+    },
+    {
+      path: "/signup2",
+      element: <Signup2 />,
+      id: 10,
     },
   ];
   return (
