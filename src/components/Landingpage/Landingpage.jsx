@@ -56,7 +56,7 @@ const Landingpage = () => {
           </Link>
         </div>
       </div>
-      <div className='h-auto mr-20 flex gap-10'>
+      <div className='h-[40rem] mr-20 flex gap-10'>
         <div className={`rounded-lg ${flipSideBar ? 'mt-48' : 'mt-0'} h-[25rem] bg-[#C1C1C1] w-56  transition-all duration-1000  shadow-md shadow-black `}>
           <div className=' font-semibold mt-8 text-2xl flex justify-center'>
             Top Tags
