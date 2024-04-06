@@ -8,6 +8,7 @@ import Mentors from "./pages/Mentors/Mentors";
 import SignIn from "./pages/Auth/SignIn";
 import Signup1 from "./pages/Auth/Signup1";
 import Signup2 from "./pages/Auth/Signup2";
+import Faqs from "./pages/faqs/Faqs";
 
 function App() {
   const links = [
@@ -27,9 +28,9 @@ function App() {
       id: 4,
     },
     {
-      // path: "/faqs",
-      // element: <Faqs />,
-      // id: 5,
+      path: "/faqs",
+      element: <Faqs />,
+      id: 5,
     },
     {
       path: "/Mentors",
