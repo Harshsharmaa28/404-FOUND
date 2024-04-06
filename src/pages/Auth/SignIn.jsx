@@ -1,11 +1,27 @@
 import React, { useState } from "react";
 import { loginImage, logoImage } from "../../utils/Constant";
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { auth } from "./Firebase-config";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const SignIn = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleSubmit = async (e) => {};
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (email === "" || password === "") {
+      return toast.error("All fields are required");
+    }
+    try {
+      const result = await signInWithEmailAndPassword(auth, email, password);
+      localStorage.setItem("user", JSON.stringify(result));
+      toast.success("SignIn SucessFully");
+    } catch (error) {
+      toast.error("Sigin Failed");
+    }
+  };
 
   return (
     <div className="flex flex-col lg:flex-row h-screen">
@@ -97,6 +113,7 @@ const SignIn = () => {
           </div>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };
