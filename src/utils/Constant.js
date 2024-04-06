@@ -5,6 +5,8 @@ const logoImage = "./assests/logo.png";
 const contactUsImage = "./assests/contactUs.png";
 export const AcademicBg = "./assests/AcBg.png";
 export const rocket = "./assests/rocket.png"
+const featureLeftImg='./assests/leftImg.png'
+const featureRightImg='./assests/rightImg.png'
 
 const eventsFaqs = [
   {
@@ -155,4 +157,6 @@ export {
   inductionFaqs,
   servicesFaqs,
   eventsFaqs,
+  featureRightImg,
+  featureLeftImg
 };
