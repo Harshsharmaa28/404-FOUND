@@ -6,6 +6,7 @@ import Homepage from "./components/Homepage/Homepage";
 import Scholarship from "./pages/Scholarship/Scholarship";
 import Mentors from "./pages/Mentors/Mentors";
 import SignIn from "./pages/Auth/SignIn";
+import Academics from "./pages/Academics/Academics";
 
 function App() {
   const links = [
@@ -25,9 +26,9 @@ function App() {
       id: 4,
     },
     {
-      // path: "/faqs",
-      // element: <Faqs />,
-      // id: 5,
+      path: "/academics",
+      element: <Academics/>,
+      id: 5,
     },
     {
       path: "/Mentors",
