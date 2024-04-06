@@ -1,25 +1,38 @@
 import React, { useState } from "react";
 import { loginImage, logoImage } from "../../utils/Constant";
-import { signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from "./Firebase-config";
+import { createUserWithEmailAndPassword } from "firebase/auth";
+import { auth, fireDB } from "./Firebase-config";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { Timestamp, addDoc, collection } from "firebase/firestore";
 
-const SignIn = () => {
+const Signup1 = () => {
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (email === "" || password === "") {
+    if (name === "" || email === "" || password === "") {
       return toast.error("All fields are required");
     }
     try {
-      const result = await signInWithEmailAndPassword(auth, email, password);
-      localStorage.setItem("user", JSON.stringify(result));
-      toast.success("SignIn SucessFully");
+      const users = await createUserWithEmailAndPassword(auth, email, password);
+
+      const user = {
+        name: name,
+        uid: users.user.uid,
+        email: users.user.email,
+        time: Timestamp.now(),
+      };
+      const userRef = collection(fireDB, "users");
+      await addDoc(userRef, user);
+      toast.success("Sign up SucessFully");
+      setName("");
+      setEmail("");
+      setPassword("");
     } catch (error) {
-      toast.error("Sigin Failed");
+      console.log(error);
     }
   };
 
@@ -27,21 +40,38 @@ const SignIn = () => {
     <div className="flex flex-col lg:flex-row h-screen">
       {/* Left Side: Sign In Form */}
       <div className="lg:w-1/2 h-screen bg-[#ECEDF0] flex justify-center">
-        <div className="w-full max-w-md ">
-          <div className="flex justify-between items-center pt-10 pb-40">
+        <div className="w-full max-w-md">
+          <div className="flex justify-between items-center pt-5 pb-16">
             <img src={logoImage} alt="Illustration" className="max-w-xl" />
             <button
               type="submit"
               className="bg-[#B378FF] text-white py-2 px-4 rounded-md hover:bg-blue-600 transition duration-200"
             >
-              SignUp
+              SignIn
             </button>
           </div>
+          <h2 className="text-2xl font-bold mb-4">
+            Step 01/ <span className="text-[#636363]">02</span>{" "}
+          </h2>
           <h2 className="text-4xl font-bold mb-4">Welcome,</h2>
           <h2 className="text-2xl font-semibold mb-4">
-            Sign In to continue...
+            Sign Up to continue...
           </h2>
           <form className="space-y-4" onSubmit={handleSubmit}>
+            <div>
+              <label htmlFor="name" className="block mb-1 font-bold">
+                Name
+              </label>
+              <input
+                type="name"
+                id="name"
+                name="name"
+                placeholder="Name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-400"
+              />
+            </div>
             <div>
               <label htmlFor="email" className="block mb-1 font-bold">
                 Email
@@ -70,29 +100,16 @@ const SignIn = () => {
                 className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-400"
               />
             </div>
-            <div className="flex items-center justify-between">
-              <div className="flex items-center">
-                <input
-                  type="checkbox"
-                  id="rememberMe"
-                  name="rememberMe"
-                  className="mr-2"
-                />
-                <label htmlFor="rememberMe">Remember me</label>
-              </div>
-              <a href="#fdf" className="hover:underline">
-                Forgot Password?
-              </a>
-            </div>
             <button
               type="submit"
               className="w-full bg-[#5D8783] text-white py-2 px-4 rounded-md hover:bg-blue-600 transition duration-200"
             >
-              Submit
+              Next
             </button>
+            <h1 className="text-center"> Help? </h1>
           </form>
           <div className="mt-4 text-sm text-[#9F9F9F]">
-            By signing in, you agree to our{" "}
+            This information will be secured as per our{" "}
             <a href="#fd" className="text-[#323232] hover:underline">
               Terms and Conditions
             </a>
@@ -100,7 +117,6 @@ const SignIn = () => {
           </div>
         </div>
       </div>
-
       {/* Right Side: Image */}
       <div className="lg:w-1/2 bg-white hidden lg:flex flex-col justify-center items-center">
         <img src={loginImage} alt="Illustration" className="max-w-2xl" />
@@ -118,4 +134,4 @@ const SignIn = () => {
   );
 };
 
-export default SignIn;
+export default Signup1;

@@ -6,6 +6,10 @@ import Homepage from "./components/Homepage/Homepage";
 import Scholarship from "./pages/Scholarship/Scholarship";
 import Mentors from "./pages/Mentors/Mentors";
 import SignIn from "./pages/Auth/SignIn";
+import Signup1 from "./pages/Auth/Signup1";
+import Signup2 from "./pages/Auth/Signup2";
+import Faqs from "./pages/faqs/Faqs";
+import Contact from "./pages/ContactUs/Contact";
 import Academics from "./pages/Academics/Academics";
 
 function App() {
@@ -21,11 +25,19 @@ function App() {
       id: 2,
     },
     {
+      path: "/contact",
+      element: <Contact />,
+      id: 3,
+    },
+    {
       path: "scholarship",
       element: <Scholarship />,
       id: 4,
     },
     {
+      path: "/faqs",
+      element: <Faqs />,
+      id: 5,
       path: "/academics",
       element: <Academics/>,
       id: 5,
@@ -44,6 +56,16 @@ function App() {
       path: "/login",
       element: <SignIn />,
       id: 8,
+    },
+    {
+      path: "/signup1",
+      element: <Signup1 />,
+      id: 9,
+    },
+    {
+      path: "/signup2",
+      element: <Signup2 />,
+      id: 10,
     },
   ];
   return (
