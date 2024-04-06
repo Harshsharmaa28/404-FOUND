@@ -9,6 +9,7 @@ import SignIn from "./pages/Auth/SignIn";
 import Signup1 from "./pages/Auth/Signup1";
 import Signup2 from "./pages/Auth/Signup2";
 import Faqs from "./pages/faqs/Faqs";
+import Contact from "./pages/ContactUs/Contact";
 
 function App() {
   const links = [
@@ -21,6 +22,11 @@ function App() {
       path: "/footer",
       element: <Footer />,
       id: 2,
+    },
+    {
+      path: "/contact",
+      element: <Contact />,
+      id: 3,
     },
     {
       path: "scholarship",
