@@ -10,6 +10,7 @@ import Signup1 from "./pages/Auth/Signup1";
 import Signup2 from "./pages/Auth/Signup2";
 import Faqs from "./pages/faqs/Faqs";
 import Contact from "./pages/ContactUs/Contact";
+import Feature from "./pages/Features/Feature";
 
 function App() {
   const links = [
@@ -62,6 +63,11 @@ function App() {
       path: "/signup2",
       element: <Signup2 />,
       id: 10,
+    },
+    {
+      path: "/features",
+      element: <Feature />,
+      id: 11,
     },
   ];
   return (

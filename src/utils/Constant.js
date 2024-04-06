@@ -3,6 +3,8 @@ const Growth = "./assests/Growth.png";
 const loginImage = "./assests/loginImage.png";
 const logoImage = "./assests/logo.png";
 const contactUsImage = "./assests/contactUs.png";
+const featureLeftImg='./assests/leftImg.png'
+const featureRightImg='./assests/rightImg.png'
 
 const eventsFaqs = [
   {
@@ -153,4 +155,6 @@ export {
   inductionFaqs,
   servicesFaqs,
   eventsFaqs,
+  featureRightImg,
+  featureLeftImg
 };
