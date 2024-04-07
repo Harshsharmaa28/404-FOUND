@@ -13,6 +13,9 @@ import Contact from "./pages/ContactUs/Contact";
 import Academics from "./pages/Academics/Academics";
 import Feature from "./pages/Features/Feature";
 import Notes from "./pages/Notes/Notes";
+import Refrences from "./pages/Refrences/Refrences";
+import Profile from "./pages/Profile/Profile";
+import ProfileRef from "./pages/AuthenticatedRefrence/ProfileRef";
 
 function App() {
   const links = [
@@ -77,10 +80,25 @@ function App() {
       id: 12,
     },
     {
-      path : "/notes",
-      element : <Notes/>,
+      path: "/notes",
+      element: <Notes />,
       id: 13,
-    }
+    },
+    {
+      path: "/refrences",
+      element: <Refrences />,
+      id: 14,
+    },
+    {
+      path: "/profile",
+      element: <Profile />,
+      id: 15,
+    },
+    {
+      path: "/profileref",
+      element: <ProfileRef />,
+      id: 15,
+    },
   ];
   return (
     <div>
