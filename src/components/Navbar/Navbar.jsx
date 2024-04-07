@@ -13,7 +13,7 @@ const Navbar = () => {
         <Link className=' font-medium hover:cursor-pointer' to="/academics">Academics</Link>
         <Link className=' font-medium hover:cursor-pointer' to="/Mentors">Mentors</Link>
       </div>
-      <img className=' hover:cursor-pointer w-[12rem] h-[3.5rem]' src={Homeicon} alt="error" />
+      <Link to='/'><img className=' hover:cursor-pointer w-[12rem] h-[3.5rem]' src={Homeicon} alt="error" /></Link>
       <div className=' items-center flex gap-20'>
         <Link className=' font-medium hover:cursor-pointer' to="/about">About Us</Link>
         <Link className=' font-medium hover:cursor-pointer' to="/contact">Contact Us</Link>

@@ -12,6 +12,7 @@ import Faqs from "./pages/faqs/Faqs";
 import Contact from "./pages/ContactUs/Contact";
 import Academics from "./pages/Academics/Academics";
 import Feature from "./pages/Features/Feature";
+import Notes from "./pages/Notes/Notes";
 
 function App() {
   const links = [
@@ -75,6 +76,11 @@ function App() {
       element: <Academics />,
       id: 12,
     },
+    {
+      path : "/notes",
+      element : <Notes/>,
+      id: 13,
+    }
   ];
   return (
     <div>

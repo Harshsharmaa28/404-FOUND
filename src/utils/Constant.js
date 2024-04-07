@@ -14,6 +14,7 @@ export const blog = './assests/blog.png'
 export const video = './assests/video.png'
 const featureBgImg='./assests/featureBgImg.png'
 const featureNotesImg='./assests/notesImg.png'
+export const profileLocked = './assests/Profile_locked.png'
 
 const eventsFaqs = [
   {
