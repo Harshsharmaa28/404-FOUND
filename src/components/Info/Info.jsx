@@ -14,23 +14,33 @@ const Info = () => {
         </div>
         <div className="vsm:max-sm:px-4 mt-2 flex justify-between px-40 text-xl">
           <div className="items-center flex flex-col">
-            <span className="vsm:max-sm:text-xl text-5xl font-bold text-[#4844EF]">1000+</span>
+            <span className="vsm:max-sm:text-xl text-5xl font-bold text-[#4844EF]">
+              1000+
+            </span>
             <span className="vsm:max-sm:text-sm font-bold">Students</span>
           </div>
           <div className=" items-center flex flex-col">
-            <span className="vsm:max-sm:text-xl text-5xl font-bold text-[#4844EF]">200+</span>
+            <span className="vsm:max-sm:text-xl text-5xl font-bold text-[#4844EF]">
+              200+
+            </span>
             <span className="vsm:max-sm:text-sm font-bold">Notes</span>
           </div>
           <div className="vsm:max-sm:hidden items-center flex flex-col">
-            <span className="vsm:max-sm:text-xl text-5xl font-bold text-[#4844EF]">15+</span>
+            <span className="vsm:max-sm:text-xl text-5xl font-bold text-[#4844EF]">
+              15+
+            </span>
             <span className="vsm:max-sm:text-sm font-bold">Scholarship</span>
           </div>
           <div className="items-center flex flex-col">
-            <span className="vsm:max-sm:text-xl text-5xl font-bold text-[#4844EF]">500+</span>
+            <span className="vsm:max-sm:text-xl text-5xl font-bold text-[#4844EF]">
+              500+
+            </span>
             <span className="vsm:max-sm:text-sm font-bold">Mentors</span>
           </div>
           <div className="items-center flex flex-col">
-            <span className="vsm:max-sm:text-xl text-5xl font-bold text-[#4844EF]">100+</span>
+            <span className="vsm:max-sm:text-xl text-5xl font-bold text-[#4844EF]">
+              100+
+            </span>
             <span className="vsm:max-sm:text-sm font-bold">Colleges</span>
           </div>
         </div>
@@ -42,11 +52,33 @@ const Info = () => {
             Unlock Knowledge, Grow Skills Achieve Sucess
           </div>
 
-          <div className="vsm:max-sm: py-4 justify-center gap-10 flex flex-wrap">
-            <Infodiv />
-            <Infodiv />
-            <Infodiv />
-            <Infodiv />
+          <div className="vsm:max-sm: py-4 justify-center  gap-10 flex flex-wrap">
+            <Infodiv
+              title="ABOUT NOTES"
+              subTitle="Unleash your academic potential with our game-changing notes! and Unlock success with our library of effective study notes!
+"
+              color="#ECCDDC"
+            />
+            <Infodiv
+              title="About Scholarships"
+              subTitle="Stop scholarship hunting!  With Nexlearn, you'll receive personalized scholarship alerts based on your academic achievements and interests.
+
+"
+              color="#4476E8"
+            />
+            <Infodiv
+              title="About Mentors"
+              subTitle="Get expert guidance to boost your learning!  Our experienced mentors offer a variety of support options, some complimentary and some tailored to your specific needs.
+"
+              color="
+#56905C"
+            />
+            <Infodiv
+              title="About Discussions"
+              subTitle="Connect and Grow with Our Learning Community by Share Your Experiences and Get Expert Advice.
+"
+              color="#6C5690"
+            />
           </div>
         </div>
       </div>
