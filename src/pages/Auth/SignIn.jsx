@@ -4,12 +4,12 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { auth } from "./Firebase-config";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const SignIn = () => {
   const navigate = useNavigate();
 
-const [email, setEmail] = useState("");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const handleSubmit = async (e) => {
@@ -22,8 +22,8 @@ const [email, setEmail] = useState("");
       localStorage.setItem("user", JSON.stringify(result));
       toast.success("SignIn SucessFully");
       setTimeout(() => {
-      navigate("/");
-    }, 2000); 
+        navigate("/");
+      }, 2000);
     } catch (error) {
       toast.error("Sigin Failed");
     }
@@ -36,12 +36,14 @@ const [email, setEmail] = useState("");
         <div className="vsm:max-sm:w-[80%] w-full max-w-md ">
           <div className="flex justify-between items-center pt-10 pb-40">
             <img src={logoImage} alt="Illustration" className="max-w-xl" />
-            <button
-              type="submit"
-              className="bg-[#B378FF] text-white py-2 px-4 rounded-md hover:bg-blue-600 transition duration-200"
-            >
-              SignUp
-            </button>
+            <Link to="/signup1">
+              <button
+                type="submit"
+                className="bg-[#B378FF] text-white py-2 px-4 rounded-md hover:bg-blue-600 transition duration-200"
+              >
+                SignUp
+              </button>
+            </Link>
           </div>
           <h2 className="text-4xl font-bold mb-4">Welcome,</h2>
           <h2 className="text-2xl font-semibold mb-4">

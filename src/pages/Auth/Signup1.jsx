@@ -5,7 +5,7 @@ import { auth, fireDB } from "./Firebase-config";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Timestamp, addDoc, collection } from "firebase/firestore";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Signup1 = () => {
   const [name, setName] = useState("");
@@ -34,7 +34,6 @@ const Signup1 = () => {
       setName("");
       setEmail("");
       setPassword("");
-      
     } catch (error) {
       console.log(error);
     }
@@ -47,12 +46,14 @@ const Signup1 = () => {
         <div className="w-full max-w-md">
           <div className="flex justify-between items-center pt-5 pb-16">
             <img src={logoImage} alt="Illustration" className="max-w-xl" />
-            <button
-              type="submit"
-              className="bg-[#B378FF] text-white py-2 px-4 rounded-md hover:bg-blue-600 transition duration-200"
-            >
-              SignIn
-            </button>
+            <Link to="/login">
+              <button
+                type="submit"
+                className="bg-[#B378FF] text-white py-2 px-4 rounded-md hover:bg-blue-600 transition duration-200"
+              >
+                SignIn
+              </button>
+            </Link>
           </div>
           <h2 className="text-2xl font-bold mb-4">
             Step 01/ <span className="text-[#636363]">02</span>{" "}
