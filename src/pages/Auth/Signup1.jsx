@@ -5,11 +5,13 @@ import { auth, fireDB } from "./Firebase-config";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Timestamp, addDoc, collection } from "firebase/firestore";
+import { useNavigate } from "react-router-dom";
 
 const Signup1 = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -31,6 +33,7 @@ const Signup1 = () => {
       setName("");
       setEmail("");
       setPassword("");
+      navigate("/signup2");
     } catch (error) {
       console.log(error);
     }
