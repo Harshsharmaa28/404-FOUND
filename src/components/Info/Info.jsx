@@ -1,5 +1,6 @@
 import React from 'react'
 import { Growth } from '../../utils/Constant';
+
 const Info = () => {
     return (
         <div className=' h-screen gap-4 px-4 flex flex-col'>

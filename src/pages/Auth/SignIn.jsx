@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { loginImage, logoImage } from "../../utils/Constant";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from "./Firebase-config";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { auth } from "./Firebase-config";
 
 const SignIn = () => {
   const [email, setEmail] = useState("");

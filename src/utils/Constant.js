@@ -7,6 +7,11 @@ export const AcademicBg = "./assests/AcBg.png";
 export const rocket = "./assests/rocket.png"
 const featureLeftImg='./assests/leftImg.png'
 const featureRightImg='./assests/rightImg.png'
+export const triangle = './assests/triangle.png'
+export const book = './assests/book.png'
+export const user = './assests/user.png'
+export const blog = './assests/blog.png'
+export const video = './assests/video.png'
 
 const eventsFaqs = [
   {
