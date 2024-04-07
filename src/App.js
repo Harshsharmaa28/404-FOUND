@@ -25,11 +25,11 @@ function App() {
       element: <Footer />,
       id: 2,
     },
-    {
-      path: "/contact",
-      element: <Contact />,
-      id: 3,
-    },
+    // {
+    //   path: "/contact",
+    //   element: <Contact />,
+    //   id: 3,
+    // },
     {
       path: "scholarship",
       element: <Scholarship />,

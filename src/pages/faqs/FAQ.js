@@ -11,12 +11,13 @@ const FAQ = ({ faqs }) => {
   };
 
   return (
-    <div className="relative min-h-screen flex justify-center items-center">
+    <div className="relative  flex justify-center ">
       <div className="z-10 w-full h-auto flex flex-col lg:flex-row justify-evenly items-center md:px-48 p-4">
-        <div className="p-4  sm:w-full md:w-[400px] rounded-lg">
+        <div className="p-4  sm:w-full md:w-full  rounded-lg">
           {faqs.map((faq) => (
             <Accordion
               key={faq.id}
+              id={faq.id}
               title={faq.query}
               answer={faq.ans}
               expanded={expandedAccordion === faq.id}

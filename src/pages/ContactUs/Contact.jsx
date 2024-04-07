@@ -3,7 +3,10 @@ import { contactUsImage } from "../../utils/Constant";
 
 const Contact = () => {
   return (
-    <div className="flex items-center  justify-center ">
+    <div
+      id="contact"
+      className="flex items-center  justify-center pt-5 px-4 rounded-xl "
+    >
       <div className="flex flex-col justify-center items-center px-4 py-4 sm:px-10 sm:py-10 bg-[#F3F3F3] shadow-lg rounded-lg">
         {/* Top three lines with text */}
         <div className="mb-8 text-center">
