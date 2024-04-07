@@ -22,16 +22,17 @@ const Footer = () => {
             <div className=' font-semibold text-xl'>Qucik Links</div>
             <br />
             <Link to='/academics'>Academics</Link>
-            <div>Scholarship</div>
-            <div>Mentorship</div>
-            <div>About Us</div>
-            <div>Contact Us</div>
+            <Link to='/'>Home</Link>
+            <Link to='/scholarship'>Scholarship</Link>
+            <Link to='/Mentors'>Mentors</Link>
+            <Link to='/about'>About Us</Link>
           </div>
         </div>
         <div className=' vsm:max-sm:hidden flex'>
           <div className=' ml-36 py-7'>
             <img src="./assests/icon.png" alt="error" />
-            <div className=' mt-4 flex w-[20rem] flex-wrap'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, aspernatur soluta! Assumenda eligendi esse architecto ullam nulla consequuntur minus culpa illo eque. Id?</div>
+            <div className=' mt-4 flex w-[20rem] flex-wrap'> Thank you for visiting Nexlearn. We encourage you to continue your learning journey and explore the wealth of resources available. We look forward to seeing you again on Nexlearn!
+</div>
             <button
               type="button"
               className=" mt-8 w-[10rem] bg-white rounded-3xl border border-black px-3 py-2 text-sm text-black font-bold shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"

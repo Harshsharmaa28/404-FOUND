@@ -6,15 +6,15 @@ import Footer from '../../components/Footer/Footer'
 import { Link } from 'react-router-dom';
 const Academics = () => {
   return (
-    <div className=' overflow-hidden'>
+    <div className=''>
       <Navbar />
       <div className=''>
-        <div className=''>
+        <div className=' '>
           <img className='vsm:max-sm:h-[30rem] px-4 py-2 sm:h-[38rem] w-screen rounded-none' src={AcademicBg} alt="" />
-          <div className='vsm:max-sm:-mt-96 text-white overflow-hidden flex-col -mt-[30%] absolute flex items-center justify-center'>
+          <div className='vsm:max-sm:-mt-96 w-screen text-white flex-col -mt-[30%] absolute flex items-center justify-center'>
             <span className='vsm:max-sm:text-5xl text-[5rem] font-bold'>ACADEMICS</span>
             <span className='vsm:max-sm:text-lg text-center text-5xl font-bold py-5'>Learn Anything, Anytime, Anywhere</span>
-            <span className='vsm:max-sm:flex-wrap vsm:max-sm:px-10 text-center flex flex-wrap sm:max-w-[60%]'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero ipsugit minima officiis! Totam delectus molestiae perferendis eius laudantium alias sequi ab.</span>
+            <span className='vsm:max-sm:flex-wrap vsm:max-sm:px-10 text-center flex flex-wrap sm:max-w-[60%]'>Demolish skill gaps.Learn anything,anywhere.Nexlearn empowers your academic journey with comprehensive resources and personalized learning tools.</span>
             <button
               type="button"
               className=" flex gap-3 rounded-full bg-white mt-16 px-4 py-2 text-sm font-semibold text-black shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
@@ -27,7 +27,8 @@ const Academics = () => {
         <div className='vsm:max-sm:px-5 flex justify-between sm:px-20'>
           <div>
             <span className='vsm:max-sm:text-2xl vsm:max-sm: text-[5rem] flex sm:flex-wrap font-bold text-[#406A9A]'>Empower Yourself with Us</span>
-            <span className='vsm:max-sm:text-sm flex flex-wrap '>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit dolorum veniam amet ipsum, impedit totam necessitatibus eveniet, esse ea odit, molestiae alias fuga repellendus quam? Eligendi nisi sapiente libero rem.</span>
+            <span className='vsm:max-sm:text-sm flex flex-wrap '>Empower yourself with us
+master your subject by exploring our comprehensive note collection,video lectures and mentorship.You can learn any course, anytime and improve your learnings..</span>
           </div>
           <div className=' vsm:max-sm:hidden'>
             <img src={rocket} alt="error" />

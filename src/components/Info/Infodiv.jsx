@@ -7,8 +7,8 @@ const Infodiv = () => {
       <div className=" h-1/3 text-center w-full  ">
         <h1 className=" font-bold ">This is more about notes</h1>
         <p className=" text-xs ">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut.
+        Unleash your academic potential with our game-changing notes! and Unlock success with our library of effective study notes!
+
         </p>
       </div>
     </div>

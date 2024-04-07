@@ -71,7 +71,7 @@ const Landingpage = () => {
             <span className="word-animation" style={{ animationDelay: '2.6s' }}>S</span>
           </div>
         </div>
-        <div className='vsm:max-sm:text-md vsm:max-sm:flex vsm:max-sm:flex-wrap vsm:max-sm:py-5 vsm:max-sm:text-sm mt-4 sm:py-10 max-w-[35rem] text-lg'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio rerum nobis natus eius odit exercitationem repellat, ex autem iusto mollitia veritatis fuga id cum quos expedita atque explicabo maiores totam.</div>
+        <div className='vsm:max-sm:text-md vsm:max-sm:flex vsm:max-sm:flex-wrap vsm:max-sm:py-5 vsm:max-sm:text-sm mt-4 sm:py-10 max-w-[35rem] text-xl'>We provide all the resources you need to succeed, from insightful notes and discussions to valuable experiences, mentorship, and clear FAQs. Just Unlock the neXlearn. You won't believe what's possible.</div>
         <div className=' mt-6'>
           <Link to='/signup'>
             <button
