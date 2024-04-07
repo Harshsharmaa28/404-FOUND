@@ -38,18 +38,26 @@ Our platform is built with the latest technologies to ensure a seamless and effi
 ---
 
 ## Getting Started
-
-To get started with neXlearn, clone this repository and install the dependencies:
-git clone http:\\github.com\mohdarif01\nexlearn.git
+Live website URL : https://nex-learn.vercel.app/
+<br>
+To get started with neXlearn, <br>
+clone this repository and install the dependencies:
+git clone https://github.com/Harshsharmaa28/404-FOUND.git
 
 Now, creating the new react app <br>
+```bash
 npx create-react-app my-app
+```
 
 Installing the dependencies <br>
-npm add react-router-dom
+```bash
+ npm install
+```
 
 To run the application locally: <br>
+```bash
 npm start
+```
 
 
 This will launch neXlearn on localhost:3000.
