@@ -1,9 +1,21 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Homeicon } from "../../utils/Constant";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Navbar = () => {
+  const user = localStorage.getItem("user");
+  const handleClick = () => {
+    // Display toast notification based on user state
+    if (user) {
+      toast.info("Already Logged In");
+    } else {
+      toast.info("Navigating To Logged In");
+    }
+  };
+
   const scrollToContact = () => {
     const contactSection = document.getElementById("contact");
     contactSection.scrollIntoView({ behavior: "smooth" });
@@ -37,7 +49,7 @@ const Navbar = () => {
         >
           Contact Us
         </div>
-        <Link to='/login'>
+        <Link to={user ? "/" : "/login"} onClick={handleClick}>
           <button
             type="button"
             className=" flex rounded-md bg-black px-8 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
@@ -47,6 +59,7 @@ const Navbar = () => {
           </button>
         </Link>
       </div>
+      <ToastContainer />
     </div>
   );
 };

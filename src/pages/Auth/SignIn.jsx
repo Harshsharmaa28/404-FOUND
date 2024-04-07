@@ -4,10 +4,12 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { auth } from "./Firebase-config";
+import { useNavigate } from "react-router-dom";
 
 const SignIn = () => {
-  
-  const [email, setEmail] = useState("");
+  const navigate = useNavigate();
+
+const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const handleSubmit = async (e) => {
@@ -19,6 +21,9 @@ const SignIn = () => {
       const result = await signInWithEmailAndPassword(auth, email, password);
       localStorage.setItem("user", JSON.stringify(result));
       toast.success("SignIn SucessFully");
+      setTimeout(() => {
+      navigate("/");
+    }, 2000); 
     } catch (error) {
       toast.error("Sigin Failed");
     }
