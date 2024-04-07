@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import { profileLocked } from "../../utils/Constant";
 import SubjectComponent from "./SubjectComponent";
+import { Link } from "react-router-dom";
 
 const Notes = () => {
   return (
@@ -10,9 +11,11 @@ const Notes = () => {
       <div>
         <div>
           <img className=" px-4 " src={profileLocked} alt="error" />
-          <span className=" absolute -mt-[4.4rem] ml-[42rem]">
-            Sign To Continue..
-          </span>
+          <Link to="/signup1">
+            <span className=" absolute -mt-[4.4rem] ml-[42rem]">
+              Sign To Continue..
+            </span>
+          </Link>
         </div>
         <div className=" flex justify-center py-6  gap-4">
           <span className=" text-3xl">Your</span>
