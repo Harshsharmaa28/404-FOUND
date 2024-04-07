@@ -10,6 +10,13 @@ Welcome to neXlearn, where we unlock the full potential of your learning journey
 ### All Necessary Information and Links are provided.
 ## Drive Link is Provided Here : https://drive.google.com/drive/folders/1adTNQqiBNJDQBqfaPb1fg8rfO4nVjJe9?usp=sharing
 
+# This drive include all Information about Project.
+# In this PPT of Project is Provided.
+# Features Implemeted in this Project through the Video
+# Deployed Link : https://nex-learn.vercel.app/
+
+
+
 ---
 
 ## Features
