@@ -1,7 +1,12 @@
 import React, { useState } from "react";
 
 import FAQ from "./FAQ";
-import { eventsFaqs, genralFaqs, inductionFaqs, servicesFaqs } from "../../utils/Constant";
+import {
+  eventsFaqs,
+  genralFaqs,
+  inductionFaqs,
+  servicesFaqs,
+} from "../../utils/Constant";
 
 const Faqs = () => {
   const [activeTab, setActiveTab] = useState(1);
@@ -62,6 +67,7 @@ const Faqs = () => {
         />
       </div>
       <div className="mt-4">{TabContent[activeTab]}</div>
+      
     </div>
   );
 };
