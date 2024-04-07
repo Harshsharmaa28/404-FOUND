@@ -1,34 +1,34 @@
 
 import React from 'react'
 import { triangle } from '../../utils/Constant'
-
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className=' py-2 px-4'>
+    <div className=' vsm:max-sm:w-full py-2 px-4'>
       <div className=' bg-black w-full h-[20rem] flex text-white rounded-2xl'>
-        <img className=' w-[12rem] h-[12rem] -mt-3 -ml-4' src="./assests/circle.png" alt="error" />
-        <div className=' py-20 flex px-24 gap-36'>
+        <img className='vsm:max-sm:hidden w-[12rem] h-[12rem] -mt-3 -ml-4' src="./assests/circle.png" alt="error" />
+        <div className='vsm:max-sm:gap-9 vsm:max-sm: vsm:max-sm:px-10 vsm:max-sm:py-4 sm:py-20 flex sm:px-24 sm:gap-36'>
           <div className=' flex text-white flex-col'>
-            <div className=' font-semibold text-xl'>Qucik Links</div>
+            <div className='font-semibold text-xl'>Qucik Links</div>
             <br />
-            <div>Home</div>
-            <div>Scholarship</div>
-            <div>Mentorship</div>
-            <div>About Us</div>
+            <Link to='/'>Home</Link>
+            <Link to='/scholarship'>Scholarship</Link>
+            <Link to='/Mentors'>Mentors</Link>
+            <Link to='/about'>About Us</Link>
             <div>Contact Us</div>
           </div>
           <div className=' flex text-white flex-col'>
             <div className=' font-semibold text-xl'>Qucik Links</div>
             <br />
-            <div>Home</div>
+            <Link to='/academics'>Academics</Link>
             <div>Scholarship</div>
             <div>Mentorship</div>
             <div>About Us</div>
             <div>Contact Us</div>
           </div>
         </div>
-        <div className='flex'>
+        <div className=' vsm:max-sm:hidden flex'>
           <div className=' ml-36 py-7'>
             <img src="./assests/icon.png" alt="error" />
             <div className=' mt-4 flex w-[20rem] flex-wrap'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, aspernatur soluta! Assumenda eligendi esse architecto ullam nulla consequuntur minus culpa illo eque. Id?</div>
@@ -41,6 +41,9 @@ const Footer = () => {
           </div>
           <img className=' overflow-hidden absolute mt-[5.5%] ml-[35%] w-[14rem] h-[14rem]' src={triangle} alt="" />
         </div>
+      </div>
+      <div className=' absolute -mt-10 text-center w-[90%] text-white'>
+        <div className='text-center '>All right reserved Copyright 2024</div>
       </div>
     </div>
   )

@@ -74,7 +74,7 @@ const Contact = () => {
           </div>
 
           {/* Image section */}
-          <div className="w-screen mx-10 lg:mx-36 ">
+          <div className="vsm:max-sm:hidden w-screen mx-10 lg:mx-36 ">
             <img
               src={contactUsImage}
               style={{ width: "400px", height: "500px" }}

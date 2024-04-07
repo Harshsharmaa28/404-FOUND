@@ -10,11 +10,11 @@ const Academics = () => {
       <Navbar />
       <div className=''>
         <div className=''>
-          <img className=' px-4 py-2 h-[38rem] w-screen rounded-none' src={AcademicBg} alt="" />
-          <div className=' text-white overflow-hidden flex-col -mt-[30%] absolute flex items-center justify-center'>
-            <span className='text-[5rem] font-bold'>ACADEMICS</span>
-            <span className=' text-center text-5xl font-bold py-5'>Learn Anything, Anytime, Anywhere</span>
-            <span className=' text-center flex flex-wrap max-w-[60%]'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero ipsa molestiae cupiditate quidem, at consequatur rerum, vitae nostrum, fugit minima officiis! Totam delectus molestiae perferendis eius laudantium alias sequi ab.</span>
+          <img className='vsm:max-sm:h-[30rem] px-4 py-2 sm:h-[38rem] w-screen rounded-none' src={AcademicBg} alt="" />
+          <div className='vsm:max-sm:-mt-96 text-white overflow-hidden flex-col -mt-[30%] absolute flex items-center justify-center'>
+            <span className='vsm:max-sm:text-5xl text-[5rem] font-bold'>ACADEMICS</span>
+            <span className='vsm:max-sm:text-lg text-center text-5xl font-bold py-5'>Learn Anything, Anytime, Anywhere</span>
+            <span className='vsm:max-sm:flex-wrap vsm:max-sm:px-10 text-center flex flex-wrap sm:max-w-[60%]'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero ipsugit minima officiis! Totam delectus molestiae perferendis eius laudantium alias sequi ab.</span>
             <button
               type="button"
               className=" flex gap-3 rounded-full bg-white mt-16 px-4 py-2 text-sm font-semibold text-black shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
@@ -24,16 +24,16 @@ const Academics = () => {
             </button>
           </div>
         </div>
-        <div className=' flex justify-between px-20'>
+        <div className='vsm:max-sm:px-5 flex justify-between sm:px-20'>
           <div>
-            <span className=' text-[5rem] flex flex-wrap font-bold text-[#406A9A]'>Empower Yourself with Us</span>
-            <span className='flex flex-wrap '>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit dolorum veniam amet ipsum, impedit totam necessitatibus eveniet, esse ea odit, molestiae alias fuga repellendus quam? Eligendi nisi sapiente libero rem.</span>
+            <span className='vsm:max-sm:text-2xl vsm:max-sm: text-[5rem] flex sm:flex-wrap font-bold text-[#406A9A]'>Empower Yourself with Us</span>
+            <span className='vsm:max-sm:text-sm flex flex-wrap '>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit dolorum veniam amet ipsum, impedit totam necessitatibus eveniet, esse ea odit, molestiae alias fuga repellendus quam? Eligendi nisi sapiente libero rem.</span>
           </div>
-          <div>
+          <div className=' vsm:max-sm:hidden'>
             <img src={rocket} alt="error" />
           </div>
         </div>
-        <div className=' py-4 flex justify-between px-36'>
+        <div className='vsm:max-sm:justify-center vsm:max-sm:gap-5 vsm:max-sm:flex-wrap py-4 flex justify-between sm:px-36'>
           <div className=' shadow-md shadow-gray-300 rounded-xl w-[15rem] h-[15rem]'>
             <div className=' gap-1 py-4 px-6 flex flex-col absolute justify-center items-center'>
               <img className=' w-[6rem] h-[6rem]' src={book} alt="error" />

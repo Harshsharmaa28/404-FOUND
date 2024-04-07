@@ -23,7 +23,7 @@ const Faqs = () => {
   };
 
   return (
-    <div className="   mt-8 bg-[#F3F3F3] py-3 mx-5   rounded-xl ">
+    <div className="vsm:max-sm:hidden   mt-8 bg-[#F3F3F3] py-3 mx-5   rounded-xl ">
       <div class="text-center py-2">
         <h1 class="inline-block capitalize px-3 text-4xl font-extrabold ">
           GET ANSWERS OF

@@ -13,9 +13,9 @@ const Homepage = () => {
       <Navbar />
       <Landingpage />
       <Info />
-      <Feature />
+      <Feature /> 
       <Faqs />
-      <Contact />
+       <Contact />
 
       <Footer />
     </div>
