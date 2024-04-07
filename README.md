@@ -77,6 +77,22 @@ Overall, the flow diagram provides a simple visual representation of the two mai
 
 
 ---
+## Have a Doubt, Not anymore:
+
+
+
+![Screenshot 2024-04-07 185252](https://github.com/dev04sa/404-FOUND/assets/129666293/96f4f19a-86a8-4872-a24b-6e6263cc2c3c)
+
+
+---
+
+## Connect With US
+
+![Screenshot 2024-04-07 185226](https://github.com/dev04sa/404-FOUND/assets/129666293/6ccfb62f-775b-4a60-a6c6-49c33bf41627)
+
+
+
+---
 
 ## Support
 
