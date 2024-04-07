@@ -1,9 +1,10 @@
 import React from "react";
-import Navbar from "../../components/Navbar/Navbar";
+import SubjectComponent from "../Notes/SubjectComponent";
 import { profileLocked } from "../../utils/Constant";
-import SubjectComponent from "./SubjectComponent";
+import Navbar from "../../components/Navbar/Navbar";
+import TutorialComponent from "./TutorialComponent";
 
-const Notes = () => {
+const Refrences = () => {
   return (
     <div>
       <Navbar />
@@ -18,7 +19,7 @@ const Notes = () => {
           <span className=" text-3xl">Your</span>
           <div class="inline-block rounded-2xl  px-2 py-1 w-fit bg-[#20C93B]">
             <h1 class="inline-block text-center text-xl font-bold border-dotted border-black border-2 rounded-3xl px-3">
-              Notes
+              Tutorails
             </h1>
           </div>
           <input
@@ -48,7 +49,7 @@ const Notes = () => {
             </div>
             <div className="py-2 border border-dashed overflow-y-scroll  border-black rounded-lg  text-center w-[60rem] h-auto bg-[#F3F3F3]">
               {[...Array(25)].map((_, index) => (
-                <SubjectComponent key={index} />
+                <TutorialComponent key={index} />
               ))}
             </div>
           </div>
@@ -58,4 +59,4 @@ const Notes = () => {
   );
 };
 
-export default Notes;
+export default Refrences;

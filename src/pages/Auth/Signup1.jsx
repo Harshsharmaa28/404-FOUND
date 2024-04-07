@@ -30,10 +30,11 @@ const Signup1 = () => {
       const userRef = collection(fireDB, "users");
       await addDoc(userRef, user);
       toast.success("Sign up SucessFully");
+      navigate("/signup2");
       setName("");
       setEmail("");
       setPassword("");
-      navigate("/signup2");
+      
     } catch (error) {
       console.log(error);
     }

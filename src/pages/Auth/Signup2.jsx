@@ -115,15 +115,23 @@
 
 import React, { useState } from "react";
 import { loginImage, logoImage } from "../../utils/Constant";
+import {useNavigate} from 'react-router-dom'
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 
 const Signup2 = () => {
+  const navigate=useNavigate();
   const [college, setCollege] = useState("");
   const [year, setYear] = useState("");
   const [branch, setBranch] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!college || !year || !branch) return toast.error("All fields are required!");
+
+    navigate('/');
+    
   };
 
   return (
@@ -228,6 +236,7 @@ const Signup2 = () => {
           </div>
         </div>
       </div>
+      <ToastContainer/>
     </div>
   );
 };

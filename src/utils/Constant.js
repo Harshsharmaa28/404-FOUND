@@ -4,154 +4,65 @@ const loginImage = "./assests/loginImage.png";
 const logoImage = "./assests/logo.png";
 const contactUsImage = "./assests/contactUs.png";
 export const AcademicBg = "./assests/AcBg.png";
-export const rocket = "./assests/rocket.png"
-const featureLeftImg='./assests/leftImg.png'
-const featureRightImg='./assests/rightImg.png'
-export const triangle = './assests/triangle.png'
-export const book = './assests/book.png'
-export const user = './assests/user.png'
-export const blog = './assests/blog.png'
-export const video = './assests/video.png'
-const featureBgImg='./assests/featureBgImg.png'
-const featureNotesImg='./assests/notesImg.png'
-export const profileLocked = './assests/Profile_locked.png'
+export const rocket = "./assests/rocket.png";
+const featureLeftImg = "./assests/leftImg.png";
+const featureRightImg = "./assests/rightImg.png";
+export const triangle = "./assests/triangle.png";
+export const book = "./assests/book.png";
+export const user = "./assests/user.png";
+export const badge = "./assests/badge.png";
+export const blog = "./assests/blog.png";
+export const video = "./assests/video.png";
+const featureBgImg = "./assests/featureBgImg.png";
+const featureNotesImg = "./assests/notesImg.png";
+export const profileLocked = "./assests/Profile_locked.png";
 
 const eventsFaqs = [
   {
     id: 0,
-    query:
-      "Who iIn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.",
-    ans: "StudIn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.pateIn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available. hackathon.",
+    query: "How can I hire a mentor?",
+    ans: "It's easy.You just need to go to our mentorship section where from you can choose mentor for your stream and according to how long you have to hire him/her you have pay for then according to the plans provided to you",
   },
   {
     id: 1,
-    query:
-      "WIn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.ams?",
-    ans: (
-      <div>
-        In publishing and graphic design, Lorem ipsum is a placeholder text
-        commonly used to demonstrate the visual form of a document or a typeface
-        without relying on meaningful content. Lorem ipsum may be used as a
-        placeholder before the final copy is available.
-      </div>
-    ),
+    query: "Why should I hire a mentor?",
+    ans: "So,a mentor is for your guidence as he can tell what to start first and how to plan for a better result.A mentor is an expert so he have a lot of information that can be helpful to you.",
   },
 ];
 const genralFaqs = [
   {
     id: 0,
-    query:
-      "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.n?",
-    ans: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.se hackathon.",
+    query: "What is the cost of mentor?",
+    ans: "Don't worry about that mentor is according to your need and choice, you can hire them as per ability.",
   },
   {
     id: 1,
-    query:
-      "What is the prIn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.?",
-    ans: (
-      <div>
-        In publishing and graphic design, Lorem ipsum is a placeholder text
-        commonly used to demonstrate the visual form of a document or a typeface
-        without relying on meaningful content. Lorem ipsum may be used as a
-        placeholder before the final copy is available.
-      </div>
-    ),
+    query: "What if I'm not satified with the given mentor ",
+    ans: "I don't think that case arose because before payment you will be provided guidense from the mentor you want to hire only after that you finally hire them.",
   },
   {
     id: 2,
-    query:
-      "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.ally?",
-    ans: "TheIn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.ampus of NIT Patna.",
+    query: "How to belive that your notes are valid?",
+    ans: "We are here to provide your valid data and resources for your satisfaction you can discuss them in your peer groups and varify with your friends also",
   },
 ];
 const servicesFaqs = [
   {
     id: 0,
-    query:
-      "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.?",
-    ans: "SIn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.thon.",
-  },
-  {
-    id: 1,
-    query:
-      "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.",
-    ans: (
-      <div>
-        In publishing and graphic design, Lorem ipsum is a placeholder text
-        commonly used to demonstrate the visual form of a document or a typeface
-        without relying on meaningful content. Lorem ipsum may be used as a
-        placeholder before the final copy is available.
-      </div>
-    ),
-  },
-  {
-    id: 2,
-    query:
-      "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.?",
-    ans: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.",
-  },
-  {
-    id: 3,
-    query:
-      "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.er?",
-    ans: "The In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available. exploration among domains is encouraged.",
-  },
-  {
-    id: 4,
-    query:
-      "Are tIn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.",
-    ans: "Yes, inIn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available. services.",
-  },
-  {
-    id: 5,
-    query:
-      "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.?",
-    ans: "The BIn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available. experience over the course.",
-  },
-  {
-    id: 6,
-    query:
-      "HIn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.?",
-    ans: "The In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.g.",
+    query: "What if I miss my scholarships?",
+    ans: "Don't worry if are connected with us you won't miss that for that just you need to turn your notifications on.",
   },
 ];
 const inductionFaqs = [
   {
     id: 0,
-    query:
-      "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.?",
-    ans: "StudIn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.ckathon.",
+    query: "7.What to do with backlogs?",
+    ans: "keep learning with us and to cover your backlog quickly just hire a mentor for your guidense.",
   },
   {
     id: 1,
-    query:
-      "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.",
-    ans: (
-      <div>
-        In publishing and graphic design, Lorem ipsum is a placeholder text
-        commonly used to demonstrate the visual form of a document or a typeface
-        without relying on meaningful content. Lorem ipsum may be used as a
-        placeholder before the final copy is available.
-      </div>
-    ),
-  },
-  {
-    id: 2,
-    query:
-      "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.y?",
-    ans: "The In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.f NIT Patna.",
-  },
-  {
-    id: 3,
-    query:
-      "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.",
-    ans: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.mains is encouraged.",
-  },
-  {
-    id: 4,
-    query:
-      "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.",
-    ans: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.",
+    query: "8.Is your website mobile friedly?",
+    ans: "Yes,our website is fully responsive.You will have a nice experience with independent of screen size.",
   },
 ];
 
@@ -168,5 +79,5 @@ export {
   featureRightImg,
   featureLeftImg,
   featureNotesImg,
-  featureBgImg
+  featureBgImg,
 };
