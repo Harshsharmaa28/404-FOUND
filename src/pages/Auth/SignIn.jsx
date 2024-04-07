@@ -4,10 +4,9 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { auth } from "./Firebase-config";
-import {useNavigate} from 
 
 const SignIn = () => {
-  const navigate=useNavigate();
+  
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
