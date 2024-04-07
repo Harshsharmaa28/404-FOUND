@@ -9,7 +9,7 @@ const Navbar = () => {
     contactSection.scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <div className={`flex justify-center gap-20 py-4 `}>
+    <div className={`  flex justify-center gap-20 py-4 `}>
       <div className=" flex gap-20 items-center">
         <Link className=" font-medium hover:cursor-pointer" to="/">
           Home
@@ -37,11 +37,6 @@ const Navbar = () => {
         >
           Contact Us
         </div>
-        <Link to="/login">
-      <Link to='/'><img className=' hover:cursor-pointer w-[12rem] h-[3.5rem]' src={Homeicon} alt="error" /></Link>
-      <div className=' items-center flex gap-20'>
-        <Link className=' font-medium hover:cursor-pointer' to="/about">About Us</Link>
-        <Link className=' font-medium hover:cursor-pointer' to="/contact">Contact Us</Link>
         <Link to='/login'>
           <button
             type="button"

@@ -3,7 +3,7 @@ import { Growth } from '../../utils/Constant';
 
 const Info = () => {
     return (
-        <div className=' h-screen gap-4 px-4 flex flex-col'>
+        <div className='h-screen gap-4 px-4 flex flex-col'>
             <div className=' rounded-lg h-[16rem] flex flex-col justify-center gap-6  bg-[#F3F3F3]'>
                 <div className='gap-5 flex justify-center'>
                     <span className=' text-5xl font-bold text-[#002F46]'>Our</span>

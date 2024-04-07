@@ -17,7 +17,7 @@ const Landingpage = () => {
   }, [])
 
   return (
-    <div className='flex justify-between'>
+    <div className=' flex justify-between'>
       <div className='ml-40 flex flex-col mt-16'>
         <div className=' text-5xl flex  gap-2 font-bold'>IMPROVE YOUR
           <div className='text-[#7E00E1]'>
