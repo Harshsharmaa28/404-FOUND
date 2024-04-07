@@ -1,6 +1,6 @@
-import { CiCirclePlus, CiCircleMinus } from "react-icons/ci";
-
-const Accordion = ({ title, answer, expanded, onToggle }) => {
+import { RiArrowDropUpLine } from "react-icons/ri";
+import { RiArrowDropDownLine } from "react-icons/ri";
+const Accordion = ({ id, title, answer, expanded, onToggle }) => {
   const toggleAccordion = () => {
     onToggle();
   };
@@ -8,15 +8,18 @@ const Accordion = ({ title, answer, expanded, onToggle }) => {
   return (
     <div
       onClick={toggleAccordion}
-      className="p-2 mb-4 border border-black font-semibold  rounded-md hover:shadow-lg cursor-pointer"
+      className="p-2 mb-4 w-full border-b-2 border-black font-semibold  rounded-md hover:shadow-lg cursor-pointer"
     >
       <div className="flex justify-between w-full">
-        <span>{title}</span>
+        <span>
+          {" "}
+          Q{id + 1}. {title}
+        </span>
         <span>
           {expanded ? (
-            <CiCircleMinus className="text-2xl" />
+            <RiArrowDropUpLine className="text-4xl" />
           ) : (
-            <CiCirclePlus className="text-2xl" />
+            <RiArrowDropDownLine className="text-4xl" />
           )}
         </span>
       </div>
