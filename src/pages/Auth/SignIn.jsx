@@ -6,6 +6,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { auth } from "./Firebase-config";
 
 const SignIn = () => {
+  
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 

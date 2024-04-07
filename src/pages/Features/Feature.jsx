@@ -4,8 +4,8 @@ import Feature2 from "./Feature2";
 
 const Feature = () => {
   return (
-    <div className="  pt-5 ">
-      <div className=" mx-auto text-center text-4xl bg-black text-white p-2 w-fit rounded-3xl flex  gap-10 my-5 px-20   ">
+    <div className=" w-full  pt-5 ">
+      <div className=" mx-auto text-center text-4xl bg-black text-white p-2 w-fit rounded-full flex  gap-10 my-5 px-20   ">
         <div>
           {" "}
           First{" "}
@@ -39,16 +39,16 @@ const Feature = () => {
         </div>
         <img src={featureRightImg} alt="featureRightImg" />
       </div>
-      <div className="flex justify-between gap-10 w-full px-20 py-10 ">
-        <div className="w-2/3 h-[38rem] flex flex-col justify-between  ">
-          <div className="h-[18rem] bg-[#F94646] rounded-xl p-4   ">
+      <div className=" flex justify-between gap-10 w-full px-20 py-8 ">
+        <div className="w-2/3 h-[35rem] flex flex-col justify-between  ">
+          <div className="h-[17rem] bg-[#F94646] rounded-xl p-4   ">
             <div className=" border-2 border-black    border-dashed  h-full rounded-xl    "></div>
           </div>
-          <div className="h-[18rem] bg-[#9681E8]  rounded-xl p-4   ">
+          <div className="h-[17rem] bg-[#9681E8]  rounded-xl p-4   ">
             <div className=" border-2 border-black    border-dashed  h-full rounded-xl    "></div>
           </div>
         </div>
-        <div className="w-1/3 h-[38rem] bg-[#5F93F9] rounded-xl p-4  ">
+        <div className="w-1/3 h-[35rem] bg-[#5F93F9] rounded-xl p-4  ">
           <div className=" border-2 border-black    border-dashed  h-full rounded-xl    "></div>
         </div>
       </div>

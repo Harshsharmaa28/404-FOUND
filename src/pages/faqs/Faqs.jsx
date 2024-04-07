@@ -23,9 +23,11 @@ const Faqs = () => {
   };
 
   return (
-    <div className="w-full max-w-4xl mx-auto mt-8">
+    <div className="   mt-8 bg-[#F3F3F3] py-3 mx-5   rounded-xl ">
       <div class="text-center py-2">
-        <h1 class="inline-block capitalize px-3 ">GET ANSWERS OF</h1>
+        <h1 class="inline-block capitalize px-3 text-4xl font-extrabold ">
+          GET ANSWERS OF
+        </h1>
         <div class="inline-block rounded-2xl m-auto px-2 py-1 w-fit bg-[#FE3D4D]">
           <h1 class="inline-block text-center text-xl font-bold border-dotted border-black border-2 rounded-3xl px-3">
             FAQs
@@ -44,7 +46,7 @@ const Faqs = () => {
           </h1>
         </div>
       </div> */}
-      <div className="flex justify-evenly items-center ">
+      <div className="flex justify-evenly px-60 items-center ">
         <TabButton
           title="Events"
           onClick={() => changeTab(1)}
@@ -67,7 +69,6 @@ const Faqs = () => {
         />
       </div>
       <div className="mt-4">{TabContent[activeTab]}</div>
-      
     </div>
   );
 };
