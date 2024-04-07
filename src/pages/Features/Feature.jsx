@@ -4,7 +4,7 @@ import Feature2 from "./Feature2";
 
 const Feature = () => {
   return (
-    <div className=" w-full  pt-5 ">
+    <div className="vsm:max-sm:hidden w-full  pt-5 ">
       <div className=" mx-auto text-center text-4xl bg-black text-white p-2 w-fit rounded-full flex  gap-10 my-5 px-20   ">
         <div>
           {" "}

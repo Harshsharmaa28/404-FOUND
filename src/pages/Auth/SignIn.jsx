@@ -30,10 +30,10 @@ const [email, setEmail] = useState("");
   };
 
   return (
-    <div className="flex flex-col lg:flex-row h-screen">
+    <div className="vsm:max-sm:w-screen flex flex-col lg:flex-row h-screen">
       {/* Left Side: Sign In Form */}
-      <div className="lg:w-1/2 h-screen bg-[#ECEDF0] flex justify-center">
-        <div className="w-full max-w-md ">
+      <div className="vsm:max-sm:w-full lg:w-1/2 sm:h-screen bg-[#ECEDF0] flex justify-center">
+        <div className="vsm:max-sm:w-[80%] w-full max-w-md ">
           <div className="flex justify-between items-center pt-10 pb-40">
             <img src={logoImage} alt="Illustration" className="max-w-xl" />
             <button

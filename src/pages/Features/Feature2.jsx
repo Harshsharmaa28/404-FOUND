@@ -85,7 +85,7 @@ import { featureBgImg, featureNotesImg } from "../../utils/Constant";
 
 const Feature2 = () => {
   return (
-    <div className="">
+    <div className="vsm:max-sm:hidden">
       <div class="text-center py-2">
         <h1 class="inline-block capitalize text-4xl px-3 text-[#002F46] font-bold ">
           GET ANSWERS OF
