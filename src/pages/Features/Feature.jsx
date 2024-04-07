@@ -1,5 +1,6 @@
 import React from "react";
 import { featureLeftImg, featureRightImg } from "../../utils/Constant";
+import Feature2 from "./Feature2";
 
 const Feature = () => {
   return (
@@ -50,6 +51,9 @@ const Feature = () => {
         <div className="w-1/3 h-[38rem] bg-[#5F93F9] rounded-xl p-4  ">
           <div className=" border-2 border-black    border-dashed  h-full rounded-xl    "></div>
         </div>
+      </div>
+      <div className=" py-5 ">
+        <Feature2 />
       </div>
     </div>
   );

@@ -12,6 +12,8 @@ export const book = './assests/book.png'
 export const user = './assests/user.png'
 export const blog = './assests/blog.png'
 export const video = './assests/video.png'
+const featureBgImg='./assests/featureBgImg.png'
+const featureNotesImg='./assests/notesImg.png'
 
 const eventsFaqs = [
   {
@@ -163,5 +165,7 @@ export {
   servicesFaqs,
   eventsFaqs,
   featureRightImg,
-  featureLeftImg
+  featureLeftImg,
+  featureNotesImg,
+  featureBgImg
 };
