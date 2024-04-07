@@ -7,6 +7,8 @@ Welcome to neXlearn, where we unlock the full potential of your learning journey
 ![image info](./public/assests/Hero_Section.png)
 
 ### Just Unlock the neXlearn. You Won't Believe What's Possible.
+### All Necessary Information and Links are provided.
+## Drive Link is Provided Here : https://drive.google.com/drive/folders/1adTNQqiBNJDQBqfaPb1fg8rfO4nVjJe9?usp=sharing
 
 ---
 
