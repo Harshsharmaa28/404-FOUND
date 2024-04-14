@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import ScrollToTop from "./hooks/useScrollToTop";
 
 import About from "./pages/AboutUs/About";
 import Footer from "./components/Footer/Footer";
@@ -16,8 +17,11 @@ import Notes from "./pages/Notes/Notes";
 import Refrences from "./pages/Refrences/Refrences";
 import Profile from "./pages/Profile/Profile";
 import ProfileRef from "./pages/AuthenticatedRefrence/ProfileRef";
+import Navbar from "./components/Navbar/Navbar";
+
 
 function App() {
+  const user = localStorage.getItem("user");
   const links = [
     {
       path: "/about",
@@ -100,14 +104,17 @@ function App() {
       id: 15,
     },
   ];
+
   return (
     <div>
-      <Routes>
-        {links.map(({ path, element, id }) => (
-          <Route key={id} path={path} element={element} />
-        ))}
-      </Routes>
+      <ScrollToTop/>
+        <Routes>
+          {links.map(({ path, element, id }) => (
+            <Route key={id} path={path} element={element} />
+          ))}
+        </Routes>
     </div>
+
   );
 }
 

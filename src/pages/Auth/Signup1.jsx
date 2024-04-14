@@ -43,7 +43,7 @@ const Signup1 = () => {
     <div className="flex flex-col lg:flex-row h-screen">
       {/* Left Side: Sign In Form */}
       <div className="lg:w-1/2 h-screen bg-[#ECEDF0] flex justify-center">
-        <div className="w-full max-w-md">
+        <div className="vsm:max-sm:w-[80%] w-full max-w-md">
           <div className="flex justify-between items-center pt-5 pb-16">
             <img src={logoImage} alt="Illustration" className="max-w-xl" />
             <Link to="/login">

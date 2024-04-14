@@ -1,25 +1,45 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { ArrowRight } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Homeicon } from "../../utils/Constant";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
+import { CircleUserRound } from 'lucide-react';
 
 const Navbar = () => {
+  const navigate = useNavigate();
+  const auth = getAuth();
   const user = localStorage.getItem("user");
   const handleClick = () => {
-    // Display toast notification based on user state
     if (user) {
-      toast.info("Already Logged In");
+      // navigate('/academics')
+      // toast.info("Already Logged In");
     } else {
-      toast.info("Navigating To Logged In");
+      // navigate('/')
     }
   };
 
+  useEffect(()=>{
+    handleClick()
+    // return () => handleClick()
+  },[])
   const scrollToContact = () => {
     const contactSection = document.getElementById("contact");
     contactSection.scrollIntoView({ behavior: "smooth" });
   };
+ 
+  const handleSignOut = async () => {
+    try {
+      await signOut(auth);
+      navigate('/')
+      localStorage.removeItem("user");
+      window.location.reload();
+    } 
+    catch (error) {
+      console.error('Error signing out:', error.message);
+    }
+  }
   return (
     <div className={`vsm:max-sm:flex vsm:max-sm:justify-between vsm:max-sm:gap-0 vsm:max-sm:  flex justify-center gap-20 py-4 `}>
       <div className=" flex gap-20 items-center">
@@ -51,15 +71,16 @@ const Navbar = () => {
         >
           Contact Us
         </div>
-        <Link to={user ? "/" : "/login"} onClick={handleClick}>
+        {!user ? <Link to={user ? "/" : "/login"} onClick={user ? handleSignOut : handleClick}>
           <button
             type="button"
             className="vsm:max-sm:px-4 flex rounded-md bg-black px-8 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
           >
-            Register
+            {user? 'SignOut' :' Register'}
             <ArrowRight className=" mt-1 ml-2 h-4 w-4" />
           </button>
-        </Link>
+        </Link> : 
+        <Link to='/profile'><CircleUserRound className=" w-10 h-10 hover:cursor-pointer"/></Link>}
       </div>
       <ToastContainer />
     </div>

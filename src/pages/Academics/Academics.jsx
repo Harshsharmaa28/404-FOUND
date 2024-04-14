@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
+import { useEffect } from "react";
 import {
   AcademicBg,
   blog,
@@ -12,6 +13,7 @@ import { ArrowRight } from "lucide-react";
 import Footer from "../../components/Footer/Footer";
 import { Link } from "react-router-dom";
 const Academics = () => {
+
   return (
     <div className=''>
       <div className=" overflow-hidden">
@@ -46,7 +48,7 @@ const Academics = () => {
                     <div className=" gap-1 py-4 px-6 flex flex-col absolute justify-center items-center">
                       <img className=" w-[6rem] h-[6rem]" src={book} alt="error" />
                       <span className=" font-bold text-[#9064A3] text-3xl">100+</span>
-                      <span className="">Top Institutes’ Notes</span>
+                      <span className=" text-black">Top Institutes’ Notes</span>
                       <Link to="/notes">
                         <ArrowRight className=" hover:cursor-pointer text-[#9064A3] mt-4 -ml-14 rounded-full bg-white border border-[#9064A3] p-1" />
                       </Link>
@@ -56,7 +58,7 @@ const Academics = () => {
                     <div className=" gap-1 py-4 px-6 flex flex-col absolute justify-center items-center">
                       <img className=" w-[6rem] h-[6rem]" src={video} alt="error" />
                       <span className=" font-bold text-[#FFD08C] text-3xl">120+</span>
-                      <span className="">Video Tutorials References</span>
+                      <span className="text-black">Video Tutorials References</span>
                       <Link to="/profileref">
                         <ArrowRight className="  hover:cursor-pointer text-[#FFD08C] mt-4 -ml-14 rounded-full bg-white border border-[#FFD08C] p-1" />
                       </Link>
@@ -66,7 +68,7 @@ const Academics = () => {
                     <div className=" gap-1 py-4 px-6 flex flex-col absolute justify-center items-center">
                       <img className=" w-[6rem] h-[6rem]" src={user} alt="error" />
                       <span className=" font-bold text-[#FF8C8C] text-3xl">200+</span>
-                      <span className="">Shared Experience</span>
+                      <span className="text-black">Shared Experience</span>
                       <ArrowRight className=" hover:cursor-pointer mt-4 -ml-14 rounded-full bg-white border border-[#FF8C8C] text-[#FF8C8C] p-1" />
                     </div>
                   </div>
@@ -74,7 +76,7 @@ const Academics = () => {
                     <div className=" gap-1 py-4 px-6 flex flex-col absolute justify-center items-center">
                       <img className=" w-[6rem] h-[6rem]" src={blog} alt="error" />
                       <span className=" font-bold text-[#8CFF97] text-3xl">200+</span>
-                      <span className="">Blogs and content</span>
+                      <span className="text-black">Blogs and content</span>
                       <ArrowRight className=" hover:cursor-pointer text-[#8CFF97] mt-4 -ml-14 rounded-full bg-white border border-[#8CFF97] p-1" />
                     </div>
                   </div>

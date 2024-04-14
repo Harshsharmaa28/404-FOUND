@@ -47,12 +47,12 @@ const Info = () => {
         <div></div>
       </div>
       <div className="flex rounded-lg vsm:max-sm:h-auto bg-[#F3F3F3] h-screen">
-        <div className="vsm:max-sm:flex-col vsm:max-sm:flex-wrap flex justify-between">
+        <div className="vsm:max-sm:flex-col vsm:max-sm:flex-wrap flex xl:-gap-24">
           <div className="vsm:max-sm:text-2xl vsm:max-sm:px-0 vsm:max-sm:py-6 vsm:max-sm:text-center flex flex-wrap px-24 sm:py-36 justify-center sm:min-w-[45rem] sm:max-w-[45rem] text-[#002F46] font-bold text-5xl">
             Unlock Knowledge, Grow Skills Achieve Sucess
           </div>
 
-          <div className="vsm:max-sm: py-4 justify-center  gap-10 flex flex-wrap">
+          <div className="vsm:max-sm: py-4  justify-center  gap-10 flex flex-wrap">
             <Infodiv
               title="ABOUT NOTES"
               subTitle="Unleash your academic potential with our game-changing notes! and Unlock success with our library of effective study notes!

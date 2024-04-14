@@ -22,7 +22,7 @@ const SignIn = () => {
       localStorage.setItem("user", JSON.stringify(result));
       toast.success("SignIn SucessFully");
       setTimeout(() => {
-        navigate("/");
+        navigate("/academics");
       }, 2000);
     } catch (error) {
       toast.error("Sigin Failed");

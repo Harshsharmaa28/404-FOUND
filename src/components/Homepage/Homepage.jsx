@@ -13,8 +13,8 @@ const Homepage = () => {
       <Navbar />
       <Landingpage />
       <Info />
-      <Feature /> 
-      <Faqs />
+      {/* <Feature /> 
+      <Faqs /> */}
        <Contact />
 
       <Footer />

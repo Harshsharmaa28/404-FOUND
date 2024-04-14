@@ -2,19 +2,21 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import "./Landingpage.css";
 import { ArrowRight } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Landingpage = () => {
   const user = localStorage.getItem("user");
+  const navigate = useNavigate();
 
   const handleClick = () => {
     // Display toast notification based on user state
     if (user) {
-      toast.info("Already Logged In");
+      navigate("/academics")
     } else {
-      toast.info("Navigating To Logged In");
+      navigate('/signup1')
+      // toast.info("Navigating To Logged In");
     }
   };
   const [flipSideBar, setflipSideBar] = useState(true);
@@ -95,23 +97,20 @@ const Landingpage = () => {
           totam.
         </div>
         <div className=" mt-6">
-          <Link to="/signup1">
-            <button
-              type="button"
-              onClick={handleClick}
-              className="flex  rounded-md bg-black px-8 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
-            >
-              Get Started
-              <ArrowRight className=" mt-1 ml-2 h-4 w-4" />
-            </button>
-          </Link>
+          <button
+            type="button"
+            onClick={handleClick}
+            className="flex  rounded-md bg-black px-8 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+          >
+            {!user ? "Get Started" : "Explore"}
+            <ArrowRight className=" mt-1 ml-2 h-4 w-4" />
+          </button>
         </div>
       </div>
       <div className="vsm:max-sm:hidden h-[40rem] mr-20 flex gap-10">
         <div
-          className={`rounded-lg ${
-            flipSideBar ? "mt-48" : "mt-0"
-          } h-[25rem] bg-[#C1C1C1] w-56  transition-all duration-1000  shadow-md shadow-black `}
+          className={`rounded-lg ${flipSideBar ? "mt-48" : "mt-0"
+            } h-[25rem] bg-[#C1C1C1] w-56  transition-all duration-1000  shadow-md shadow-black `}
         >
           <div className=" font-semibold mt-8 text-2xl flex justify-center">
             Top Tags
@@ -130,9 +129,8 @@ const Landingpage = () => {
           </div>
         </div>
         <div
-          className={` rounded-lg ${
-            !flipSideBar ? "mt-48" : "mt-0"
-          } h-[25rem] w-56 bg-[#7E00E1] transition-all duration-1000  shadow-md shadow-black `}
+          className={` rounded-lg ${!flipSideBar ? "mt-48" : "mt-0"
+            } h-[25rem] w-56 bg-[#7E00E1] transition-all duration-1000  shadow-md shadow-black `}
         >
           <div className=" flex justify-center mt-10">
             <button

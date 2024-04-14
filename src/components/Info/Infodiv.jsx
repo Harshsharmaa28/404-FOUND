@@ -2,7 +2,7 @@ import React from "react";
 
 const Infodiv = ({ title, subTitle, color }) => {
   return (
-    <div className="rounded-lg w-[15rem] h-[15rem]">
+    <div className="rounded-lg w-[16rem] h-[16rem]">
       <div
         className={`h-2/3 w-full `}
         style={{
