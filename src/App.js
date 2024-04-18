@@ -18,6 +18,8 @@ import Refrences from "./pages/Refrences/Refrences";
 import Profile from "./pages/Profile/Profile";
 import ProfileRef from "./pages/AuthenticatedRefrence/ProfileRef";
 import Navbar from "./components/Navbar/Navbar";
+import ForgotPassword from "./pages/Auth/ForgotPassword";
+import Error from "./pages/Error/Error";
 
 
 function App() {
@@ -103,6 +105,16 @@ function App() {
       element: <ProfileRef />,
       id: 15,
     },
+    {
+      path: '/password/reset',
+      element: <ForgotPassword/>,
+      id: 16
+    },
+    {
+      path: '/*',
+      element: <Error/>,
+      id: 17
+    }
   ];
 
   return (

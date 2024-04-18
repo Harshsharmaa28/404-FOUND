@@ -88,9 +88,9 @@ const SignIn = () => {
                 />
                 <label htmlFor="rememberMe">Remember me</label>
               </div>
-              <a href="#fdf" className="hover:underline">
+              <Link to='/password/reset' className="hover:underline">
                 Forgot Password?
-              </a>
+              </Link>
             </div>
             <button
               type="submit"
